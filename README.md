@@ -1,4 +1,4 @@
-# Credit_Card_Fraud_Detection
+# Credit Card Fraud Detection
 This project aimed at capturing fraudulent credit card applications with a supervised model using synthetic credit card application data collected between January 1, 2017 and December 31, 2017. The dataset includes synthetic PII (Personally Identifiable Information) fields specifically designed for identity fraud analysis. The final model can detect about 51% of all frauds in 3% of the population.
 
 ### Section 1. Data Quality Report
