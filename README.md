@@ -28,4 +28,11 @@ Excluded outliers and filled missing or frivolous values with unique strings tha
 
 To reduce dimensionality and make the final model viable, I selected variables based on a univariate Kolmogorov–Smirnov statistic. Only the top 224 variables will be kept. After that, 25 of the 224 variables will be selected using the FDR score (What fraction of all the fraud can the model catch at a particular score cutoff) by LightGBM classifier and SequentialFeatureSelector.
 
+### Section 4. Modeling
+<b>\[File: Modeling_IdentityFraud.ipynb\]</b>
+
+Split the dataset into a training set, test set, and out-of-time set (last 3 months' records), the out-of-time set is necessary because the last 3 months' pattern is abnormal. Using logistic regression as the benchmark, several different types of models are explored, including decision tree, random forest, boosting trees, and neural network. The final model is chosen mainly based on the performance on the out-of-time set, a LightGBM model is chosen. 
+
+Recommended cutoff of 3% for balanced sensitivity and high customer aquisition, considering rejection of authentic applicant will encounter reduced loyalty and image.
+
 
